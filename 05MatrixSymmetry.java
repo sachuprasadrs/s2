@@ -4,7 +4,7 @@ class MatrixSymmetry {
 		int a[][] = new int[20][20];
 		int b[][] = new int[20][20];
 		int i, j, r1, c1;
-		Scanner sc = new Scanner(System.in)
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the row of 1st matrix");
 		r1 = sc.nextInt();
 		System.out.println("Enter the column of 1st matrix");
@@ -32,7 +32,7 @@ class MatrixSymmetry {
 			}
 		}
 		if (isSymmetric) {
-			ystem.out.println("The first matrix is symmetric.");
+			System.out.println("The first matrix is symmetric.");
 		}
 		else {
 			System.out.println("The first matrix is not symmetric.");

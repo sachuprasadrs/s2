@@ -14,7 +14,7 @@ class Product {
 		
 		for (int i = 0; i < 3; i++) {
 			System.out.print("Enter product ID for product " + (i + 1) + ": ");
-			int p = scanner.nextInt();
+			int p = sc.nextInt();
 			sc.nextLine();
 			
 			System.out.print("Enter product name for product " + (i + 1) + ": ");

@@ -11,9 +11,9 @@ class Product {
 		this.price = price;
 	}
 
-	public static void main(String[] args) {
+	public static void main(String args[]) {
 		Scanner scanner = new Scanner(System.in);
-		Product[] products = new Product[3];
+		Product products[] = new Product[3];
 
 		for (int i = 0; i < 3; i++) {
 			System.out.print("Enter product ID for product " + (i + 1) + ": ");
@@ -37,4 +37,3 @@ class Product {
 		scanner.close();
 	}
 }
-

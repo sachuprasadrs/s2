@@ -12,11 +12,11 @@ class Complex{
 	}
 	public static void main(String args[]){
 		Scanner sc=new Scanner(System.in);
-		System.out.println("enter first complexs no (as real imginary)");
+		System.out.println("enter first Complex no (as real imginary)");
 		int r1=sc.nextInt();
 		int i1=sc.nextInt();
 		Complex c1=new Complex(r1,i1);
-		System.out.println("enter second complexs no (as real imginary)");
+		System.out.println("enter second Complex no (as real imginary)");
 		int r2=sc.nextInt();
 		int i2=sc.nextInt();
 		Complex c2=new Complex(r2,i2);

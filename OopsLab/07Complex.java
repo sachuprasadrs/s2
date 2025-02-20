@@ -1,20 +1,16 @@
 import java.util.*;
-class Complex
-{
+class Complex{
 	int r,i;
-	Complex(int r,int i)
-	{
+	Complex(int r,int i){
 		this.r=r;
 		this.i=i;
 	}
-	void sum(Complex c1,Complex c2)
-	{
+	void sum(Complex c1,Complex c2){
 		int x=c1.r+c2.r;
 		int y=c1.i+c2.i;
 		System.out.println("sum of "+x+"+"+y+"i");
 	}
-	public static void main(String args[])
-	{
+	public static void main(String args[]){
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter first complexs no (as real imginary)");
 		int r1=sc.nextInt();

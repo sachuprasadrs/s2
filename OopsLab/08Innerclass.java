@@ -17,13 +17,13 @@ class Cpu{
 		}
 	}
 	static class Ram{
-		int size;
-		String name;
+		static int size;
+		static String name;
 		Ram(int size, String name){
 			this.size = size;
 			this.name = name;
 		}
-		void display() {
+		static void display() {
 			System.out.println("RAM Size: " + size + "GB");
 			System.out.println("RAM Manufacturer: " + name);
 		}

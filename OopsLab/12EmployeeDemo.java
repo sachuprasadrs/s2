@@ -24,7 +24,7 @@ public class EmployeeDemo {
         for (int i = 0; i < n; i++) {
             System.out.print("Enter Employee " + (i + 1) + " Number: ");
             int eNo = sc.nextInt();
-            sc.nextLine();  // Consume newline
+            sc.nextLine();
             System.out.print("Enter Employee " + (i + 1) + " Name: ");
             String eName = sc.nextLine();
             System.out.print("Enter Employee " + (i + 1) + " Salary: ");

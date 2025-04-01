@@ -1,13 +1,12 @@
 echo "Enter a Binary number :"
-read Binary
+read binary
 decimal=0
 i=0
-while [ $Binary -ne 0 ]
+while [ $binary -ne 0 ]
 do
-	rem=$((Binary%2))
-	decimal=$((decimal*rem*2**i))
-	
+	rem=$((binary%10))
+	decimal=$((decimal + rem * 2 ** i))
 	i=$((i+1))
- binary=$((Binary/10))
+	binary=$((binary/10))
 done
 echo "Decimal equivalent is: $decimal"

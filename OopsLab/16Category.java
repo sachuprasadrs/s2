@@ -85,11 +85,11 @@ class Category {
 			f[i] = new Fiction(pn, an, bn, a, p, "Fiction");
 		}
 		System.out.println("\nLiterature book details are....\n");
-			for (int i = 0; i < n1; i++) {
+		for (int i = 0; i < n1; i++) {
 			l[i].display();
 		}
-			System.out.println("\nFiction book details are....\n");
-			for (int i = 0; i < n2; i++) {
+		System.out.println("\nFiction book details are....\n");
+		for (int i = 0; i < n2; i++) {
 			f[i].displayF();
 		}
 		sc.close();

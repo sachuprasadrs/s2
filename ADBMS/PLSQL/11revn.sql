@@ -12,4 +12,3 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Reversed number is ' || rev);
 END;
 /
-

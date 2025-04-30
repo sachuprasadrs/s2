@@ -12,7 +12,7 @@ BEGIN
             END IF;
         END LOOP;
         IF is_prime THEN
-            DBMS_OUTPUT.PUT_LINE(num || ' is a prime number.');
+            DBMS_OUTPUT.PUT_LINE(num);
         END IF;
     END LOOP;
 END;

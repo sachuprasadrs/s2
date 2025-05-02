@@ -23,7 +23,7 @@ public class Username {
 			System.out.println("Login successful!");
 		}
 		catch (AuthenticationException e){
-			System.out.println("Login failed: " + e.getMessage());
+			System.out.println("Login failed! " + e);
 		} 
 		finally {
 			sc.close();

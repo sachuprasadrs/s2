@@ -181,3 +181,24 @@ salary difference1000
 
 3 rows updated.
 
+SQL> create table purchase (id int primary key,item varchar(10),noofitem int,price int);
+
+Table created.
+
+SQL> drop table purchase;
+
+Table dropped.
+
+SQL> create table purchase (id int primary key,item varchar(10) unique,noofitem int,price int);
+
+Table created.
+
+SQL> CREATE TABLE stock (item VARCHAR(10),stock_available INT,FOREIGN KEY (item) REFERENCES purchase(item));
+
+Table created.
+
+SQL> @trigger2.sql
+
+Trigger created.
+
+SQL> 

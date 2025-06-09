@@ -9,8 +9,6 @@ BEGIN
       str1 := str1 || SUBSTR(str, i, 1);
    END LOOP;
 
-   DBMS_OUTPUT.PUT_LINE('Reverse is: ' || str1);
-
    IF str = str1 THEN
       DBMS_OUTPUT.PUT_LINE(str || ' is a Palindrome.');
    ELSE

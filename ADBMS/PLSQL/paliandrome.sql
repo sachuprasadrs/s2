@@ -1,20 +1,20 @@
-SET SERVER OUTPUT ON
-SET VERIFY OFF
-
 DECLARE
-    str_input VARCHAR2(100);
-    reversed_str VARCHAR2(100) := '';
+   str   VARCHAR2(20) := '&str';
+   len   INTEGER;
+   str1  VARCHAR2(20) := '';
 BEGIN
-    str_input := '&str';
+   len := LENGTH(str);
 
-    FOR i IN REVERSE 1 .. LENGTH(str_input) LOOP
-        reversed_str := reversed_str || SUBSTR(str_input, i, 1);
-    END LOOP;
+   FOR i IN REVERSE 1 .. len LOOP
+      str1 := str1 || SUBSTR(str, i, 1);
+   END LOOP;
 
-    IF str_input = reversed_str THEN
-        DBMS_OUTPUT.PUT_LINE(str_input || ' is a palindrome.');
-    ELSE
-        DBMS_OUTPUT.PUT_LINE(str_input || ' is not a palindrome.');
-    END IF;
+   DBMS_OUTPUT.PUT_LINE('Reverse is: ' || str1);
+
+   IF str = str1 THEN
+      DBMS_OUTPUT.PUT_LINE(str || ' is a Palindrome.');
+   ELSE
+      DBMS_OUTPUT.PUT_LINE(str || ' is NOT a Palindrome.');
+   END IF;
 END;
 /

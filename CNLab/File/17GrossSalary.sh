@@ -11,7 +11,7 @@ else
   hra=$(( salary * 10 / 100 ))
   da=$(( salary * 90 / 100 ))
 fi
-gross_sal=$(( hra + da ))
+gross_sal=$(( salary+hra + da ))
 echo "HRA: $hra"
 echo "DA: $da"
 echo "GROSS SALARY: $gross_sal"

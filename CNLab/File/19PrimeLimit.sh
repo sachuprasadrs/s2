@@ -1,23 +1,28 @@
-echo "Enter the lower limit: "
-read l
-echo "Enter the upper limit: "
-read u
-echo "The prime numbers are:"
-prime() {
-  for (( i = l; i <= u; i++ )); do
-    flag=0
-    for (( j = 2; j <= i / 2; j++ )); do
-      if (( i % j == 0 )); then
-        flag=1
-        break
-      fi
-    done
-    if [ $flag -eq 0 ] && [ $i -gt 1 ]; then
-      echo "$i"
+is_prime() {
+  num=$1
+  if [ "$num" -lt 2 ]
+  then
+    return 1
+  fi
+  for ((i = 2; i * i <= num; i++))
+  do
+    if (( num % i == 0 ))
+    then
+      return 1
     fi
   done
+  return 0
 }
-prime
+read -p "Enter lower limit: " l
+read -p "Enter upper limit: " u
+echo "Prime numbers between $l and $u:"
+for ((n = l; n <= u; n++))
+do
+  if is_prime "$n"
+  then
+    echo "$n"
+  fi
+done
 
 :<< END_COMMENT
 

@@ -7,18 +7,14 @@ if [ "$salary" -lt 15000 ]
 then
   hra=$(( salary * 2 / 100 ))
   da=$(( salary * 98 / 100 ))
-  gross_sal=$(( hra + da ))
-  echo "HRA: $hra"
-  echo "DA: $da"
-  echo "GROSS SALARY: $gross_sal"
 else
   hra=$(( salary * 10 / 100 ))
   da=$(( salary * 90 / 100 ))
-  gross_sal=$(( hra + da ))
-  echo "HRA: $hra"
-  echo "DA: $da"
-  echo "GROSS SALARY: $gross_sal"
 fi
+gross_sal=$(( hra + da ))
+echo "HRA: $hra"
+echo "DA: $da"
+echo "GROSS SALARY: $gross_sal"
 
 : << 'END_COMMENT'
 1. Input: Prompt the user to enter the basic salary.
